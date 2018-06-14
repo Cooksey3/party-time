@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Number of Guests</title>
+</head>
+
+<body>
+	<header>
+		<h1>Guests</h1>
+	</header>
+
+	<ul th:each="guest: ${guestsModel}">
+		<li th:text="${guest.firstName + ' ' + guest.lastName + ': Age - ' + guest.age}"></li>
+	</ul>
+
+	<form method="POST">
+		<div>
+			<label>Enter number of guests:</label>
+			<input type="text" name="guests" />
+		</div>
+	</form>
+
+</body>
+</html>

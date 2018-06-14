@@ -1,8 +1,7 @@
 package org.cookseys.partytime;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
@@ -26,7 +25,7 @@ public class GuestTest {
 	
 	@Test
 	public void shouldGetNumberOfGuests() {
-		Integer number = underTest.getNumberOfGuests();
+		Integer number = underTest.getAge();
 		
 		assertThat(18, is(number));
 	}
