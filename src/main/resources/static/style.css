@@ -11,13 +11,22 @@
 }
 */
 .container {
+	display: grid;
+	grid-template-rows: 70px repeat(4, auto);
+	grid-template-columns: repeat(2, auto);
 	height: 100vh;
 	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
 	background-color:#faf8f8;
+}
+
+h1 {
+	grid-column: 1/-1;
+	text-align: center;
+	align-self: center;
 }
 
 /*.guest-info {*/
