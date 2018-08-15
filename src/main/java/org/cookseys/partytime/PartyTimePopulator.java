@@ -14,9 +14,7 @@ public class PartyTimePopulator implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Guest guest = new Guest("Bilbo", "Baggins", 25);
-		
-		guestRepo.save(guest);
+		guestRepo.save(new Guest("Bilbo", "Baggins", 25));
 		
 	}
 

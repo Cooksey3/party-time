@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.adults, .kids {
+	display: flex;
+}
+
+.counter {
+	width: 30px;
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	/*flex-direction: column;*/
+/*	justify-content: center;
+	align-items: center;
+*/	/*background: linear-gradient(lightgray, black, lightgray);*/
+}
+
+.guestCount {
+	background-color: #a27c45;
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 200px;
+	border: 3px solid #a27c45;
+	border-radius: 5px;
+	align-items: center;
+}
+
+.buttons {
+	display: flex;
+}
+
+.food-options {
+	display: flex;
+	flex-direction: column;
+	min-width: 100px;
+	border: 3px solid #a27c45;
+	border-radius: 5px;
+}

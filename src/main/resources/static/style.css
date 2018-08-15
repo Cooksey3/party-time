@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*.adults, .kids {
+	display: flex;
+}
+*/
+/*.counter {
+	width: 30px;
+}
+*/
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color:#faf8f8;
+}
+
+/*.guest-info {*/
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
+	/*flex-direction: column;*/
+	/*border: solid 1px;*/
+	/*border-radius: 5px;*/
+	/*border-color: #eae8e8;*/
+	/*background-color: #eae8e8;*/
+	/*width: 15rem;*/
+	/*height: 15rem;*/
+	/*justify-content: space-around;*/
+	/*align-items: center;*/
+/*}*/
+
+
+.guest-info {
+	display: grid;
+	grid-template-rows: repeat(10, 1fr);
+	grid-template-columns: repeat(10, 1fr);
+	width: 15rem;
+	height: 15rem;
+	/*justify-content: space-around;*/
+
+	/*align-items: center;*/
+	border-radius: 5px;
+	border-color: #eae8e8;
+	background-color: #eae8e8;
+}
+
+/*#adults {
+	grid-row-start: 0;
+	grid-column: 0/-1;
+}*/
+
+input.adultCount, input.kidCount {
+    width: 2.5rem;
+    align-items: center;
+}
+
+/*.guestCount {
+	background-color: #a27c45;
+	height: inherit;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 200px;
+	border: 3px solid #a27c45;
+	border-radius: 5px;
+	align-items: center;
+}
+
+.buttons {
+	display: flex;
+}
+
+.food-options {
+	display: flex;
+	flex-direction: column;
+	min-width: 100px;
+	border: 3px solid #a27c45;
+	border-radius: 5px;
+}*/

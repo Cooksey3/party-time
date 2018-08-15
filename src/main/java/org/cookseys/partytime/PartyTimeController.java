@@ -15,7 +15,7 @@ public class PartyTimeController {
 	@RequestMapping("/home")
 	public String getAllGuests(Model model) {
 		model.addAttribute("guestsModel", guestRepo.findAll());
-		return "homeView";
+		return "home";
 	}
 
 }

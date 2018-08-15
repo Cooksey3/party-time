@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css"></link>
+	<title>Party Time!</title>
+</head>
+<body class="container">
+	<form class="guestCount" action="home.html">
+		<input id="adultCount" class="counter" type="number" name="adultsCount" value="0"/>
+		<input id="kidCount" class="counter" type="number" name="kidsCount" value="0"/>
+		<!-- <div id="alcohol"> -->
+			<p>Will there be alcohol?</p>
+			<input id="yes" type="radio" value="yes"/>Yes<br></br>
+			<input id="no" type="radio" value="no"/>No
+<!-- 		</div> -->
+		<!-- <div class="food-options"> -->
+			<input id="pizza" type="checkbox" name="pizza" value="pizza"/> Pizza
+			<input id="subs" type="checkbox" name="subs" value="subs"/> Subs
+			<input id="salad" type="checkbox" name="pizza" value="salad"/> Salad
+			<input class="submit" type="submit" value="Submit"/>
+		<!-- </div> -->
+	</form>
+	<div>
+		<p class="totalGuests">Total guests: </p>
+		<p class="totalServings">Total servings: </p>
+	</div>
+    <script src="../templates/ServingsCalculator.js"></script>
+</body>
+</html>
