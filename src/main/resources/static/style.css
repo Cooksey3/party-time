@@ -33,9 +33,12 @@ h1 {
 	grid-template-columns: repeat(10, 1fr);
 	width: 15rem;
 	height: 15rem;
+/*	border-style: solid;
 	border-radius: 5px;
-	border-color: #eae8e8;
-	background-color: #eae8e8;
+	border-color: #e6e2e2;
+*/	
+	box-shadow: 0px 0px 2.5px 2.5px gray;
+	background-color: #faf8f8;
 	justify-content: space-evenly;
 }
 
