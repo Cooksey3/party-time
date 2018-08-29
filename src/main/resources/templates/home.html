@@ -5,25 +5,72 @@
 	<title>Party Time!</title>
 </head>
 <body class="container">
-	<form class="guestCount" action="home.html">
-		<input id="adultCount" class="counter" type="number" name="adultsCount" value="0"/>
-		<input id="kidCount" class="counter" type="number" name="kidsCount" value="0"/>
-		<!-- <div id="alcohol"> -->
-			<p>Will there be alcohol?</p>
-			<input id="yes" type="radio" value="yes"/>Yes<br></br>
-			<input id="no" type="radio" value="no"/>No
-<!-- 		</div> -->
-		<!-- <div class="food-options"> -->
-			<input id="pizza" type="checkbox" name="pizza" value="pizza"/> Pizza
-			<input id="subs" type="checkbox" name="subs" value="subs"/> Subs
-			<input id="salad" type="checkbox" name="pizza" value="salad"/> Salad
-			<input class="submit" type="submit" value="Submit"/>
-		<!-- </div> -->
-	</form>
-	<div>
-		<p class="totalGuests">Total guests: </p>
-		<p class="totalServings">Total servings: </p>
+	<div class="guest-info">
+		<h1>Party Food Planner</h1>
+		<form id="form">
+			<section id="event-info">
+				<div>
+					<h5>Event Name:</h5>
+					<input type="text" name="event-name"></input>
+				</div>
+
+				<div>
+					<h5>Event:</h5>
+					<input type="list" list="event-type"/>
+				
+					<datalist id="event-type">
+						<option value="Wedding"/>
+						<option value="Graduation"/>
+						<option value="Birthday"/>
+						<option value="Anniversary"/>
+						<option value="Christmas"/>
+						<option value="Thanksgiving"/>
+						<option value="St. Patrick's Day"/>
+					</datalist>
+				</div>
+
+				<div>
+					<h5>Date:</h5>
+					<input id="datefield" type="date" name="event-date"/>
+				</div>
+
+				<div>
+					<h5>Time:</h5>
+					<input id="time" type="time"></input>
+				</div>
+
+				<div>
+					<h5>Address:</h5>
+					<input type="text"></input>
+				</div>
+			</section>
+
+
+			<section id="foodPlanning">
+				<div id="guests">
+					<p>Adults:</p>
+					<input id="adultCount" min="0" class="counter" type="number" name="adultCount" value="0"></input>
+					<p>Kids:</p>
+					<input id="kidCount" min="0" class="counter" type="number" name="kidsCount" value="0"></input>
+				</div>
+
+				<div id="food-type">
+					<p>Select type of food:</p>
+					<input id="pizza" type="checkbox" name="pizza" value="pizza"></input> Pizza
+					<input id="subs" type="checkbox" name="subs" value="subs"></input> Subs
+					<input id="salad" type="checkbox" name="pizza" value="salad"></input> Salad
+				</div>
+
+				<div id="drinks">
+					<p>Will there be alcohol?</p>
+					<input type="radio" name="alcohol" value="yes"></input> Yes<br/>
+					<input type="radio" name="alcohol" value="no"></input> No<br/>
+				</div>
+			</section>
+			<input class="submit" type="submit" value="Next"></input>
+		</form>
 	</div>
-    <script src="../templates/ServingsCalculator.js"></script>
 </body>
+    <script src="./src/main/resources/static/app.js"></script>
+    <script src="./src/main/resources/static/date.js"></script>
 </html>

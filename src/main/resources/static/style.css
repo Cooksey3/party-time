@@ -13,18 +13,24 @@
 	justify-content: space-evenly;
 }
 
+
 h1 {
 	grid-column: 1/-1;
 	text-align: center;
 	align-self: center;
 }
 
-#event-info {
+#event-info, #foodPlanning {
 	display: flex;
 	flex-wrap: wrap;
-	height: 100%;
-	justify-content: space-evenly;
-	align-content: space-evenly;
+	margin:30px;
+	padding:5px; /* this */
+}
+
+#event-info > div, #foodPlanning > div {
+  flex:1 1 auto;
+  text-align:center;
+  margin:5px;  /* and that, will result in a 10px gap */
 }
 
 .guest-info {
@@ -37,18 +43,20 @@ h1 {
 	margin-right: auto;
 	box-shadow: 0px 0px 2.5px 2.5px gray;
 	background-color: #faf8f8;
+	border-radius: 5px;
 }
 
 #form {
 	display: grid;
-	grid-template-rows: 96% 4%;
+	grid-template-rows: 32% 64% 4%;
 }
 
-/*#empty-div {
-	grid-row: 1/2;
-	grid-column: 1/-1;
+#foodPlanning {
+	grid-row: 2/3;
+	/*grid-column: 1/-1;*/
 }
-*/
+
+
 #adults {
 	text-align: center;
 	align-self: center;
@@ -68,14 +76,15 @@ h1 {
 #food-type {
 	grid-row: 3/5;
 	grid-column: 2/-1;
-	align-self: center;
 }
 
 #drinks {
 }
 
 .submit {
-	grid-row: 2/-1
+	justify-self: center;
+	grid-row: 3/-1;
+	width: 3rem;
 }
 
 input.adultCount, input.kidCount {
