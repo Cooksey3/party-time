@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PartyTimeController {
 
-	@Resource
-	private GuestRepository guestRepo;
+//	@Resource
+//	private GuestRepository guestRepo;
 
 	@RequestMapping("/home")
 	public String getAllGuests(Model model) {

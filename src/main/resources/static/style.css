@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+.container {
+	display: flex;
+	/*padding: 10px 0;*/
+	height: 100vh;
+	width: 100vw;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+
+h1 {
+	grid-column: 1/-1;
+	text-align: center;
+	align-self: center;
+}
+
+#event-info, #foodPlanning {
+	display: flex;
+	flex-wrap: wrap;
+	margin:30px;
+	padding:5px; /* this */
+}
+
+#event-info > div, #foodPlanning > div {
+  flex:1 1 auto;
+  text-align:center;
+  margin:5px;  /* and that, will result in a 10px gap */
+}
+
+.guest-info {
+	padding: 5px;
+	display: grid;
+	grid-template-rows: 10% 90%;
+	width: 90%;
+	height: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 2.5px 2.5px gray;
+	background-color: #faf8f8;
+	border-radius: 5px;
+}
+
+#form {
+	display: grid;
+	grid-template-rows: 32% 64% 4%;
+}
+
+#foodPlanning {
+	grid-row: 2/3;
+	/*grid-column: 1/-1;*/
+}
+
+
+#adults {
+	text-align: center;
+	align-self: center;
+	grid-column: 1/6;
+	grid-row: 1/3;
+	border-top-left-radius: 5px;
+}
+
+#kids{
+	text-align: center;
+	align-self: center;
+	grid-column: 6/-1;
+	grid-row: 1/3;
+	border-top-right-radius: 5px;
+}
+
+#food-type {
+	grid-row: 3/5;
+	grid-column: 2/-1;
+}
+
+#drinks {
+}
+
+.submit {
+	justify-self: center;
+	grid-row: 3/-1;
+	width: 3rem;
+}
+
+input.adultCount, input.kidCount {
+    width: 2.5rem;
+    align-items: center;
+}
