@@ -26,7 +26,7 @@ const UIController = (() => {
 		const kidNum = parseInt(document.querySelector(DOMstrings.kids).value);
 		const total = partyDataController.calculateGuests(adultNum, kidNum);
 
-		document.getElementById(DOMstrings.guestCount).textContent = total;
+		// document.getElementById(DOMstrings.guestCount).textContent = total;
 	}
 
 	servingsCalc = () => {
@@ -34,7 +34,7 @@ const UIController = (() => {
 		const kidServings = parseFloat(document.querySelector(DOMstrings.kids).value);
 		const total = partyDataController.calculateServings(adultServings, kidServings);
 
-		document.getElementById(DOMstrings.servings).textContent = total;	
+		// document.getElementById(DOMstrings.servings).textContent = total;	
 	}
 
 	return {
