@@ -28,7 +28,6 @@ h1 {
 
 #event-info>div, #foodPlanning>div {
 	flex: 1 1 auto;
-	text-align: center;
 	margin: 5px; /* and that, will result in a 10px gap */
 }
 
@@ -36,7 +35,7 @@ h1 {
 	padding: 5px;
 	display: grid;
 	grid-template-rows: 10% 90%;
-	width: 90%;
+	width: 600px;
 	height: 80%;
 	margin-left: auto;
 	margin-right: auto;
