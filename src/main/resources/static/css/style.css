@@ -44,6 +44,12 @@ h1 {
 	border-radius: 5px;
 }
 
+#hello {
+    margin-right: 100px;
+    width: 100px;
+    height: 100px;
+}
+
 #form {
 	display: grid;
 	grid-template-rows: 32% 64% 4%;

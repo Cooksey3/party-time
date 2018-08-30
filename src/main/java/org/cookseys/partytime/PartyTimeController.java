@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class PartyTimeController {
 
-//	@Resource
-//	private GuestRepository guestRepo;
+	@Resource
+	private RestaurantRepository restaurantRepo;
 
 	@RequestMapping("/home")
 	public String getAllGuests(Model model) {
-//		model.addAttribute("guestsModel", guestRepo.findAll());
+		model.addAttribute("restaurantModel", restaurantRepo.findAll());
 		return "home";
 	}
 
