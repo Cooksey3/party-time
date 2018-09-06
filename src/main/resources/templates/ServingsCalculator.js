@@ -1,12 +1,12 @@
-// const xhr = new XMLHttpRequest();
-// xhr.onreadystatechange = function() {
+//1 serving = 1lb of food
+var adultServings = 1;
+var kidServings = .5;
 
-// 	if (xhr.readyState === 4 && xhr.status === 200) {
-// 	const res = JSON.parse(xhr.responseText);
+var container = document.querySelector('.container')
 
-// 	}
-// }
+logMealTypeValue = () => {
+	var log = document.querySelector('#meal').value;
+	console.log(log)
+}
 
-// xhr.open('GET', 'http://localhost:8080/home', true)
-// xhr.send()
-
+container.addEventListener('click', console.log('Hello'));

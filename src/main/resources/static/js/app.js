@@ -16,8 +16,8 @@ const partyDataController = (() => {
 const UIController = (() => {
 	const DOMstrings = {
 		submit: '.submit',
-		adults: '.adultCount',
-		kids: '.kidCount',
+		adults: '#adultCount',
+		kids: '#kidCount',
 		guestCount: 'guestCount',
 		servings: 'servings'
 	};
@@ -30,7 +30,7 @@ const UIController = (() => {
 	}
 
 	servingsCalc = () => {
-		// const adultServings = parseFloat(document.querySelector(DOMstrings.adults).value);
+		// const adultServings = parseInt(document.querySelector(DOMstrings.adults).value);
 		// const kidServings = parseFloat(document.querySelector(DOMstrings.kids).value);
 		// const total = partyDataController.calculateServings(adultServings, kidServings);
 

@@ -31,6 +31,18 @@
 						<option value="St. Patrick's Day"/>
 					</datalist>
 				</div>
+				<div>
+					<h5>Meal Type:</h5>
+					<input  id="meal" type="list" list="meal-type"/>
+				
+					<datalist id="meal-type">
+						<option value="Cocktails"/>
+						<option value="Appetizers"/>
+						<option value="Breakfast"/>
+						<option value="Lunch/Dinner"/>
+						<option value="Dessert"/>
+					</datalist>
+				</div>
 
 				<div>
 					<h5>Date:</h5>
@@ -54,10 +66,10 @@
 				</div>
 
 				<div id="food-type">
-					<p>Select type of food:</p>
-					<input id="pizza" type="checkbox" name="pizza" value="pizza"></input> Pizza
-					<input id="subs" type="checkbox" name="subs" value="subs"></input> Subs
-					<input id="salad" type="checkbox" name="pizza" value="salad"></input> Salad
+					<p>Menu:</p>
+					<input class="checklist" id="pizza" type="checkbox" name="pizza" value="pizza"></input> Pizza
+					<input class="checklist" id="subs" type="checkbox" name="sub" value="subs"></input> Subs
+					<input class="checklist" id="salad" type="checkbox" name="salad" value="salad"></input> Salad
 				</div>
 
 				<div id="drinks">
@@ -65,16 +77,18 @@
 					<input type="radio" name="alcohol" value="yes"></input> Yes<br/>
 					<input type="radio" name="alcohol" value="no"></input> No<br/>
 				</div>
-				<ul>
-					<li class="restaurant" th:each="restaurant: ${restaurantModel}"><a th:href="|${restaurant.url}|" th:text="|${restaurant.name}|"></a></li>
-				</ul>
+<!-- 				<ul>
+					<li th:id="|restaurantLI-${restaurant.id}|" class="restaurant" th:each="restaurant: ${restaurantModel}"><a th:href="|${restaurant.url}|" th:text="|${restaurant.name}|"></a></li>
+				</ul> -->
 			</section>
+
 			<input class="submit" type="submit" value="Next"></input>
 		</form>
 	</div>
 	<div id="emptyDiv"></div>
 </body>
     <script src="js/app.js"></script>
+    <script src="js/servingsCalculator.js"></script>
     <script src="js/date.js"></script>
-    <script src="js/ajax.js"></script>
+    <script src="js/displayRestaurants.js"></script>
 </html>

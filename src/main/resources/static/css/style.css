@@ -31,6 +31,10 @@ h1 {
 	margin: 5px; /* and that, will result in a 10px gap */
 }
 
+#foodPlanning {
+	justify-content: space-between;
+}
+
 .guest-info {
 	padding: 5px;
 	display: grid;
@@ -68,6 +72,15 @@ h1 {
 	border-top-left-radius: 5px;
 }
 
+#guests {
+	width: 100px;
+	height: 100px;
+}
+
+#adultCount, #kidCount {
+	max-width: 50px;
+}
+
 #kids {
 	text-align: center;
 	align-self: center;
@@ -82,7 +95,7 @@ h1 {
 }
 
 #drinks {
-	
+	width: 100px;
 }
 
 .submit {
