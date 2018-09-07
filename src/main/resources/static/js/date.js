@@ -11,3 +11,4 @@ let yyyy = today.getFullYear();
 
 today = yyyy+'-'+mm+'-'+dd;
 document.getElementById("datefield").setAttribute("min", today);
+document.getElementById("datefield").setAttribute("value", today);
