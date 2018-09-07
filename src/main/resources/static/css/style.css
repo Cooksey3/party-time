@@ -2,11 +2,11 @@
 	margin: 0;
 	padding: 0;
 	font-family: arial;
+	align-items: center;
 }
 
 .container {
 	display: flex;
-	/*padding: 10px 0;*/
 	height: 100vh;
 	width: 100vw;
 	align-items: center;
@@ -23,12 +23,12 @@ h1 {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 30px;
-	padding: 5px; /* this */
+	padding: 5px;
 }
 
 #event-info>div, #foodPlanning>div {
 	flex: 1 1 auto;
-	margin: 5px; /* and that, will result in a 10px gap */
+	margin: 5px;
 }
 
 #foodPlanning {
@@ -37,8 +37,6 @@ h1 {
 
 .guest-info {
 	padding: 5px;
-	/*display: grid;*/
-	grid-template-rows: 10% 90%;
 	width: 600px;
 	height: 80%;
 	margin-left: auto;
@@ -56,14 +54,12 @@ h1 {
 
 #form {
 	display: flex;
-	/*grid-template-rows: 32% 64% 4%;*/
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
 
 #foodPlanning {
 	grid-row: 2/3;
-	/*grid-column: 1/-1;*/
 }
 
 #adults {
@@ -75,8 +71,10 @@ h1 {
 }
 
 #guests {
-	width: 100px;
 	height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #adultCount, #kidCount {
@@ -92,8 +90,14 @@ h1 {
 }
 
 #food-type {
-	grid-row: 3/5;
-	grid-column: 2/-1;
+	display: flex;
+	justify-content: space-evenly;
+/*	grid-row: 3/5;
+	grid-column: 2/-1;*/
+}
+
+#menu-main {
+	list-style-type: none;
 }
 
 #drinks {
@@ -107,9 +111,16 @@ h1 {
 }
 
 input[type=text], input[type=list], input[type=date], input[type=time], select {
-    /*width: 100%;*/
     padding: 6px 10px;
-    /*margin: 8px 0;*/
+    height: 2rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=list], input[type=date], input[type=time], select {
+    padding: 6px 10px;
     height: 2rem;
     display: inline-block;
     border: 1px solid #ccc;
@@ -138,6 +149,15 @@ input.adultCount, input.kidCount {
 h4 {
 	display: inline;
 }
+ input[type=number] {
+ 	padding: 3px 5px;
+    width: 2.5rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 
 /*.guestCount {
 	background-color: #a27c45;

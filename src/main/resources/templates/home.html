@@ -59,19 +59,38 @@
 
 			<!-- <section id="foodPlanning"> -->
 				<div id="guests">
-					<p>Adults:</p>
-					<input id="adultCount" min="0" class="counter" type="number" name="adultCount" value="0"></input>
-					<p>Kids:</p>
-					<input id="kidCount" min="0" class="counter" type="number" name="kidsCount" value="0"></input>
+					<section>
+						<span>Adults:</span>
+						<input id="adultCount" min="0" class="counter" type="number" name="adultCount" value="0"></input>
+					</section>
+					<section>
+						<span>Kids:</span>
+						<input id="kidCount" min="0" class="counter" type="number" name="kidsCount" value="0"></input>
+					</section>
 				</div>
 
-				<div id="food-type">
-					<p>Menu:</p>
-					<input class="checklist" id="pizza" type="checkbox" name="pizza" value="pizza"></input> Pizza
-					<input class="checklist" id="subs" type="checkbox" name="sub" value="subs"></input> Subs
-					<input class="checklist" id="salad" type="checkbox" name="salad" value="salad"></input> Salad
+				<div>
+					<ul id="menu-main">Main:
+						<li><input class="checklist" id="pizza" type="checkbox" name="pizza" value="pizza"></input> Pizza</li>
+						<li><input class="checklist" id="subs" type="checkbox" name="sub" value="subs"></input> Subs</li>
+						<li><input class="checklist" id="grill" type="checkbox" name="grill" value="grill"></input> Grill/BBQ</li>
+					</ul>
 				</div>
-
+				<div>
+					<ul id="menu-main">Sides:
+						<li><input class="checklist" id="chips" type="checkbox" name="chips" value="chips"></input> Chips</li>
+						<li><input class="checklist" id="fries" type="checkbox" name="fries" value="fries"></input> Fries</li>
+						<li><input class="checklist" id="salad" type="checkbox" name="salad" value="salad"></input> Salad</li>
+					</ul>
+				</div>
+				<div>
+					<ul id="menu-main">Dessert:
+						<li><input class="checklist" id="cookies" type="checkbox" name="cookies" value="cookies"></input> Cookies</li>
+						<li><input class="checklist" id="cake" type="checkbox" name="cake" value="cake"></input> Cake</li>
+						<li><input class="checklist" id="brownies" type="checkbox" name="brownies" value="brownies"></input> Brownies</li>
+						<li><input class="checklist" id="ice-cream" type="checkbox" name="ice-cream" value="ice-cream"></input> Ice Cream</li>
+					</ul>
+				</div>
 				<div id="drinks">
 					<p>Will there be alcohol?</p>
 					<input type="radio" name="alcohol" value="yes"></input> Yes<br/>
