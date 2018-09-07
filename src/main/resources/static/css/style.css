@@ -37,7 +37,7 @@ h1 {
 
 .guest-info {
 	padding: 5px;
-	display: grid;
+	/*display: grid;*/
 	grid-template-rows: 10% 90%;
 	width: 600px;
 	height: 80%;
@@ -55,8 +55,10 @@ h1 {
 }
 
 #form {
-	display: grid;
-	grid-template-rows: 32% 64% 4%;
+	display: flex;
+	/*grid-template-rows: 32% 64% 4%;*/
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 #foodPlanning {
@@ -102,6 +104,17 @@ h1 {
 	justify-self: center;
 	grid-row: 3/-1;
 	width: 3rem;
+}
+
+input[type=text], input[type=list], input[type=date], input[type=time], select {
+    /*width: 100%;*/
+    padding: 6px 10px;
+    /*margin: 8px 0;*/
+    height: 2rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input.adultCount, input.kidCount {
