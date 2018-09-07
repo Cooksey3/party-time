@@ -109,6 +109,23 @@ input.adultCount, input.kidCount {
 	align-items: center;
 }
 
+.results-container {
+	padding: 5px;
+	/*display: grid;*/
+	/*grid-template-rows: 10% 90%;*/
+	width: 200px;
+	height: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 0px 2.5px 2.5px gray;
+	background-color: #faf8f8;
+	border-radius: 5px;	
+}
+
+h4 {
+	display: inline;
+}
+
 /*.guestCount {
 	background-color: #a27c45;
 	height: inherit;

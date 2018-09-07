@@ -10,7 +10,7 @@ xhr.onreadystatechange = function() {
 		for (let el of checklistArray) {
 			el.addEventListener('click', () => {
 				if(el.checked) {
-					const foodType = document.querySelector('#food-type')
+					const foodType = document.querySelector('.results-container')
 					const list = document.createElement("ul");
 					list.className = "linkList"
 					appendElement(foodType, list)
@@ -39,15 +39,15 @@ xhr.onreadystatechange = function() {
 					}
 					console.log(liArray)
 				}
+				function appendElement(parent, child){
+					parent.appendChild(child)
+				}
 			})
 		}
 		//Next, I need to give the UL a class, check to see if that class exists, and if it does, do nothing.
 	}
 }
 
-function appendElement(parent, child){
-	parent.appendChild(child)
-}
 
 xhr.open("GET", "http://localHost:8080/restaurants", true);
 xhr.send();

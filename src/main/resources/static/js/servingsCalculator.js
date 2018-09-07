@@ -9,7 +9,10 @@
 calculateMeatNeeded = () => {
 	let foodWeightLow = (((adults.value * 6) + (kids.value * 6)/2)/16).toFixed(2);
 	let foodWeightHigh = (((adults.value * 8) + (kids.value * 8)/2)/16).toFixed(2);
-	console.log(foodWeightLow, foodWeightHigh)
+	const high = document.querySelector('#high');
+	const low = document.querySelector('#low');
+	high.textContent = foodWeightHigh;
+	low.textContent = foodWeightLow;
 }
 
 //Cocktail: No food, or snacks?

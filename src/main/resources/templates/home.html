@@ -77,15 +77,18 @@
 					<input type="radio" name="alcohol" value="yes"></input> Yes<br/>
 					<input type="radio" name="alcohol" value="no"></input> No<br/>
 				</div>
-<!-- 				<ul>
-					<li th:id="|restaurantLI-${restaurant.id}|" class="restaurant" th:each="restaurant: ${restaurantModel}"><a th:href="|${restaurant.url}|" th:text="|${restaurant.name}|"></a></li>
-				</ul> -->
 			</section>
 
 			<input class="submit" type="submit" value="Next"></input>
 		</form>
 	</div>
-	<div id="emptyDiv"></div>
+	<div class="results-container" id="results">
+		<div>
+			<span>Lbs of meat (high): </span><h4 id="high"></h4>
+			<br/>
+			<span>Lbs of meat (low): </span><h4 id="low"></h4>
+		</div>
+	</div>
 </body>
     <script src="js/app.js"></script>
     <script src="js/servingsCalculator.js"></script>
