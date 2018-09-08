@@ -15,6 +15,10 @@ calculateMeatNeeded = () => {
 	low.textContent = foodWeightLow;
 }
 
+calculatePizzaNeeded = () => {
+	
+}
+
 //Cocktail: No food, or snacks?
 
 //Hor d'oeuvres - 6-10 bites per person

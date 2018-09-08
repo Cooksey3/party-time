@@ -44,6 +44,23 @@ xhr.onreadystatechange = function() {
 				}
 			})
 		}
+
+		const none = document.getElementById('none');		
+		const beer = document.getElementById('beer');
+		const wine = document.getElementById('wine');
+		const liquer = document.getElementById('liquor');
+		const mixed = document.getElementById('mixed');
+
+		wineStatus = () => {
+			if(none.checked) {
+				beer.checked = false;
+				wine.checked = false;
+				liquor.checked = false;
+				mixed.checked = false;
+			}
+		};
+
+		none.addEventListener('click', wineStatus);
 		//Next, I need to give the UL a class, check to see if that class exists, and if it does, do nothing.
 	}
 }
